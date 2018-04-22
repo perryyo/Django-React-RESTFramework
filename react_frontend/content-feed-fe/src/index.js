@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { SSL_OP_PKCS1_CHECK_1 } from 'constants';
 import 'bootstrap/dist/css/bootstrap.css';
-import {Row, Col, Card, CardBlock, CardText, CardTitle} from 'reactstrap';
+import {Row, Col, Card, CardBody, CardText, CardTitle, CardImg} from 'reactstrap';
 import './style.css';
 
 class ContentFeed extends React.Component {
@@ -41,16 +41,23 @@ class ContentItem extends React.Component{
     render(){
         return(
         <Row className="ContentItem">
+        <Col xs="3">
+        
+        </Col>
             <Col xs="6">
                 <Card>
-                    <CardBlock>
+                    <CardBody>
                         <CardTitle>
                             { this.props.item.title }
                         </CardTitle>
+                        <CardImg top width="100%" src="http://via.placeholder.com/350x150">
+                        
+                        </CardImg>
+                        
                         <CardText>
                             { this.props.item.description }
                         </CardText>
-                    </CardBlock>
+                    </CardBody>
                 </Card>
             </Col>
         </Row>)
