@@ -3,6 +3,7 @@ import ReactDom from 'react-dom';
 import { SSL_OP_PKCS1_CHECK_1 } from 'constants';
 import 'bootstrap/dist/css/bootstrap.css';
 import {Row, Col, Card, CardBlock, CardText, CardTitle} from 'reactstrap';
+import './style.css';
 
 class ContentFeed extends React.Component {
     constructor(){
@@ -39,7 +40,7 @@ class ContentFeed extends React.Component {
 class ContentItem extends React.Component{
     render(){
         return(
-        <Row>
+        <Row className="ContentItem">
             <Col xs="6">
                 <Card>
                     <CardBlock>
