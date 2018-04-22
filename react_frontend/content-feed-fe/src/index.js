@@ -41,19 +41,15 @@ class ContentItem extends React.Component{
     render(){
         return(
         <Row className="ContentItem">
-        <Col xs="3">
-        
-        </Col>
-            <Col xs="6">
-                <Card>
+        <Col xs="3"/>
+            <Col xs="12" sm="6">
+                <Card>                        
+                  <CardImg top width="100%" src={this.props.item.image }>
+                 </CardImg> 
                     <CardBody>
                         <CardTitle>
                             { this.props.item.title }
                         </CardTitle>
-                        <CardImg top width="100%" src="http://via.placeholder.com/350x150">
-                        
-                        </CardImg>
-                        
                         <CardText>
                             { this.props.item.description }
                         </CardText>
