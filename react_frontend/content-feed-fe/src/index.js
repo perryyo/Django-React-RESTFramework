@@ -25,7 +25,7 @@ class ContentFeed extends React.Component {
             <ul>
                 {this.state.items.map(function(item, index) {
                     return (
-                    <div>
+                    <div key={index}>
                         <h1>{ item.title }</h1>
                         <p>{item.description}</p>
                     </div>)
