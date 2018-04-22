@@ -8,11 +8,12 @@ This sample project that uses the Django Rest Framework, Docker and ReactJs
 ## Dependencies for ReactJS Frontend
 To setup and run the application, you're going to need npm from NodeJS available to install the frontend code(REACTJS).
 Ensure that you are in the react_fronend directory.
-Open a cmd terminal, install node modules:
+
+1. Open a cmd terminal, install node modules:
 ```
 npm install 
 ```
-Start node server:
+2. Start node server:
 ```
 npm run start
 ```
