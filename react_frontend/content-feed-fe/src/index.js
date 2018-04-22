@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 import { SSL_OP_PKCS1_CHECK_1 } from 'constants';
+import 'bootstrap/dist/css/bootstrap.css';
 
 class ContentFeed extends React.Component {
     constructor(){
