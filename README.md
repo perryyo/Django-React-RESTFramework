@@ -9,12 +9,22 @@ Building a Django application using the Rest API
 * ReactJs
 
 ## Installation
-*Installation using PyPI*
-___
+__*Installation using PyPI*__
+
+---
 > pip install djangorestframework-jsonapi
-___
-*Installation using PyPI*
-___
+---
+__*Installation from Source*__
+---
 > $ git clone https://github.com/django-json-api/django-rest-framework-json-api.git
 > $ cd django-rest-framework-json-api
 > $ pip install -e .
+
+## Running Django App
+```
+$ git clone https://github.com/django-json-api/django-rest-framework-json-api.git
+$ cd django-rest-framework-json-api
+$ pip install -e .
+$ django-admin.py runserver --settings=example.settings
+```
+> Browse to http://localhost:8000
