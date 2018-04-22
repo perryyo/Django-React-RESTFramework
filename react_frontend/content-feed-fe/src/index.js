@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDom from 'react-dom';
 import { SSL_OP_PKCS1_CHECK_1 } from 'constants';
 import 'bootstrap/dist/css/bootstrap.css';
+import {Row, Col, Card, CardBlock, CardText, CardTitle} from 'reactstrap';
 
 class ContentFeed extends React.Component {
     constructor(){
@@ -26,14 +27,32 @@ class ContentFeed extends React.Component {
             <ul>
                 {this.state.items.map(function(item, index) {
                     return (
-                    <div key={index}>
-                        <h1>{ item.title }</h1>
-                        <p>{item.description}</p>
-                    </div>)
+                        < ContentItem item={item} />
+)
                 }
                 )}
             </ul>
         );
+    }
+}
+
+class ContentItem extends React.Component{
+    render(){
+        return(
+        <Row>
+            <Col xs="6">
+                <Card>
+                    <CardBlock>
+                        <CardTitle>
+                            { this.props.item.title }
+                        </CardTitle>
+                        <CardText>
+                            { this.props.item.description }
+                        </CardText>
+                    </CardBlock>
+                </Card>
+            </Col>
+        </Row>)
     }
 }
 
