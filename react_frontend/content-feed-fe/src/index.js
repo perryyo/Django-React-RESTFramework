@@ -28,7 +28,7 @@ class ContentFeed extends React.Component {
             <ul>
                 {this.state.items.map(function(item, index) {
                     return (
-                        < ContentItem item={item} />
+                        < ContentItem item={item} key={index}/>
 )
                 }
                 )}
