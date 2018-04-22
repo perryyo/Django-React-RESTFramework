@@ -37,28 +37,27 @@ class ContentFeed extends React.Component {
     }
 }
 
-class ContentItem extends React.Component{
-    render(){
-        return(
-        <Row className="ContentItem">
-        <Col xs="3"/>
-            <Col xs="12" sm="6">
-                <Card>                        
-                  <CardImg top width="100%" src={this.props.item.image }>
-                 </CardImg> 
-                    <CardBody>
-                        <CardTitle>
-                            { this.props.item.title }
-                        </CardTitle>
-                        <CardText>
-                            { this.props.item.description }
-                        </CardText>
-                    </CardBody>
-                </Card>
-            </Col>
-        </Row>)
-    }
-}
+
+const ContentItem = ({ item }) => (
+    <Row className="ContentItem">
+    <Col xs="3"/>
+        <Col xs="12" sm="6">
+            <Card>                        
+              <CardImg top width="100%" src={item.image }>
+             </CardImg> 
+                <CardBody>
+                    <CardTitle>
+                        { item.title }
+                    </CardTitle>
+                    <CardText>
+                        { item.description }
+                    </CardText>
+                </CardBody>
+            </Card>
+        </Col>
+    </Row>
+)
+
 
 ReactDom.render(
     <ContentFeed />,
