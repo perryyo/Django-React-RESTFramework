@@ -1,0 +1,12 @@
+version: '3'
+services:
+  db:
+    image: sqlite
+  web:
+    build: ./web/
+    ports:
+      - "8001:8001"
+    volumes:
+      - ./web:/code
+    command: python manage.py runserver 0.0.0.0:8001
+
