@@ -10,10 +10,11 @@ Building a Django application using the Rest API
 
 ## Installation
 *Installation using PyPI*
+___
 > pip install djangorestframework-jsonapi
-
+___
 *Installation using PyPI*
-
+___
 > $ git clone https://github.com/django-json-api/django-rest-framework-json-api.git
 > $ cd django-rest-framework-json-api
 > $ pip install -e .
