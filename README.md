@@ -1,24 +1,25 @@
-# Django-Application-with-RESTFramework
-Building a Django application using the Rest API 
-
-
+# Django app with Django Rest Framework and ReatJS
+This sample project that uses the Django Rest Framework, Docker and ReactJs
 ## Requirements
 * Python (2.7, 3.4, 3.5, 3.6)
 * Django (1.11, 2.0)
 * Django REST Framework (3.6, 3.7)
 * ReactJs
-
-## Installation
-__*Installation using PyPI*__
+## Dependencies
+To setup and run the application, you're going to need npm from NodeJS available to install the frontend code(REACTJS)
+## Installation 
+### __*Manual Installation*__
+You're encouraged to setup a virtualenv to work in prior to configuring the dependencies.
+1. Install Python Requirements
+    ```
+    pip install -r requirements.txt
+    python setup.py develop 
+    ```
 
 ---
 > pip install djangorestframework-jsonapi
 ---
-__*Installation from Source*__
----
-> $ git clone https://github.com/django-json-api/django-rest-framework-json-api.git
-> $ cd django-rest-framework-json-api
-> $ pip install -e .
+
 
 ## Running Django App
 ```
