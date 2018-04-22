@@ -5,29 +5,40 @@ This sample project that uses the Django Rest Framework, Docker and ReactJs
 * Django (1.11, 2.0)
 * Django REST Framework (3.6, 3.7)
 * ReactJs
-## Dependencies for ReactJS Frontend
+## Installation 
+### __*Dependencies for ReactJS Frontend*__
 To setup and run the application, you're going to need npm from NodeJS available to install the frontend code(REACTJS).
 Ensure that you are in the react_fronend directory.
 
 1. Open a cmd terminal, install node modules:
-```
-npm install 
-```
+    ```
+    npm install 
+    ```
 2. Start node server:
-```
-npm run start
-```
-> Browse to http://localhost:3000/
+    ```
+    npm run start
+    ```
+    > Browse to http://localhost:3000/
 
-## Installation 
-### __*Manual Installation*__
+
+### __*Dependencies for Django and DjangoRestFramework*__
 You're encouraged to setup a virtualenv to work in prior to configuring the dependencies.
+Ensure that you are in the contentfeed directory.
 1. Install Python Requirements
     ```
     pip install -r requirements.txt
     python setup.py develop 
     ```
-
+2. Django migrate, create admin user
+    ```
+    ./manage.py migrate
+    ./manage.py createsuperuser
+    ```
+3. Django migrate, create admin user
+    ```
+    ./manage.py migrate
+    ./manage.py createsuperuser
+    ```
 ---
 > pip install djangorestframework-jsonapi
 ---
